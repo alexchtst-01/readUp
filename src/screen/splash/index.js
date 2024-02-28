@@ -1,8 +1,14 @@
+import React, {useEffect} from 'react';
 import {Dimensions, StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+
 import {LIGHT, PRIMARY_GREEN, RIGHTS_TITLE_FONT, SPLASH_FONT} from '../../utils';
 
-const Spalash = () => {
+const Splash = ({navigation}) => {
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.replace('GateWay')
+    }, 3000)
+  }, [])
   return (
     <View style={styles.container}>
       <View style={styles.box}>
@@ -13,7 +19,7 @@ const Spalash = () => {
   );
 };
 
-export default Spalash;
+export default Splash;
 
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
@@ -26,7 +32,7 @@ const styles = StyleSheet.create({
   },
   box: {
     justifyContent: 'space-between',
-    height: 0.5 * height,
+    height: 0.6 * height,
     paddingBottom: 50,
   },
   text: {
@@ -34,11 +40,12 @@ const styles = StyleSheet.create({
     fontFamily: SPLASH_FONT,
     fontSize: 50,
     color: LIGHT,
+    fontWeight: 'bold'
   },
   rights: {
     textAlign: 'center',
     fontFamily: RIGHTS_TITLE_FONT,
-    fontSize: 12,
+    fontSize: 15,
     color: LIGHT,
     bottom: 1,
   },
