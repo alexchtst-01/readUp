@@ -1,0 +1,127 @@
+[
+    {
+        "id": 1,
+        "book_genre": "Comedy",
+        "book_name": "Reggie Watts: Why Shit So Crazy?"
+    },
+    {
+        "id": 2,
+        "book_genre": "Drama",
+        "book_name": "Stranger on the Prowl (Imbarco a mezzanotte)"
+    },
+    {
+        "id": 3,
+        "book_genre": "Comedy",
+        "book_name": "Blackballed: The Bobby Dukes Story"
+    },
+    {
+        "id": 4,
+        "book_genre": "Drama|Romance",
+        "book_name": "Greatest, The"
+    },
+    {
+        "id": 5,
+        "book_genre": "Comedy|Drama",
+        "book_name": "Accidents Happen"
+    },
+    {
+        "id": 6,
+        "book_genre": "Action|Drama|Sci-Fi|Thriller",
+        "book_name": "Core, The"
+    },
+    {
+        "id": 7,
+        "book_genre": "Adventure|Documentary",
+        "book_name": "Blindsight"
+    },
+    {
+        "id": 8,
+        "book_genre": "Drama",
+        "book_name": "Return, The (Vozvrashcheniye)"
+    },
+    {
+        "id": 9,
+        "book_genre": "Comedy|Horror|Sci-Fi",
+        "book_name": "Re-Animator"
+    },
+    {
+        "id": 10,
+        "book_genre": "Horror|Mystery|Sci-Fi",
+        "book_name": "Don't Blink"
+    },
+    {
+        "id": 11,
+        "book_genre": "Drama",
+        "book_name": "Last Exit to Brooklyn"
+    },
+    {
+        "id": 12,
+        "book_genre": "Documentary",
+        "book_name": "9to5: Days in Porn (a.k.a. 9 to 5: Days in Porn)"
+    },
+    {
+        "id": 13,
+        "book_genre": "Animation",
+        "book_name": "Merry Madagascar"
+    },
+    {
+        "id": 14,
+        "book_genre": "Drama",
+        "book_name": "I'll Cry Tomorrow"
+    },
+    {
+        "id": 15,
+        "book_genre": "Drama|Thriller",
+        "book_name": "One Hour Photo"
+    },
+    {
+        "id": 16,
+        "book_genre": "Comedy",
+        "book_name": "Little Stiff, A"
+    },
+    {
+        "id": 17,
+        "book_genre": "Comedy|Horror|Mystery|Thriller",
+        "book_name": "Scream 4"
+    },
+    {
+        "id": 18,
+        "book_genre": "Comedy",
+        "book_name": "Clerks"
+    },
+    {
+        "id": 19,
+        "book_genre": "Western",
+        "book_name": "Gun the Man Down"
+    },
+    {
+        "id": 20,
+        "book_genre": "Drama",
+        "book_name": "Cantinflas"
+    },
+    {
+        "id": 21,
+        "book_genre": "Action|Animation|Drama",
+        "book_name": "Princess"
+    },
+    {
+        "id": 22,
+        "book_genre": "Comedy|Drama|Romance",
+        "book_name": "Alfie"
+    },
+    {
+        "id": 23,
+        "book_genre": "Drama|Romance",
+        "book_name": "Playing by Heart"
+    },
+    {
+        "id": 24,
+        "book_genre": "Thriller",
+        "book_name": "Hush"
+    },
+    {
+        "id": 25,
+        "book_genre": "Comedy|Romance",
+        "book_name": "Mr. Jealousy"
+    }
+]
