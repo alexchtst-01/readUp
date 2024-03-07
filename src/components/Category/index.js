@@ -12,7 +12,7 @@ const Category = ({dataCategory}) => {
         {dataCategory.length > 0 &&
             dataCategory.slice(0, Math.min(5, dataCategory.length)).map((item) => {
                 return(
-                    <ResultsItems key={item.name} name={item.genre} />
+                    <ResultsItems key={item.id} name={item.genre} />
                 )
             })
         }
