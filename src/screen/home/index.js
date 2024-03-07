@@ -1,11 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import React from 'react';
+import CostumDrawer from '../../components/CostumDrawer';
 
-const Home = ({navigation}) => {
+const Home = ({ navigation }) => {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <ScrollView contentContainerStyle={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <View>
+        <Text>Home</Text>
+        <CostumDrawer />
+      </View>
+    </ScrollView>
   );
 };
 

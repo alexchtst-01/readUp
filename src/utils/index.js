@@ -15,6 +15,10 @@ export const DESCRIPTION_FONT = '';
 export const BOOK_TITLE_FONT = '';
 export const PRIMARY_FONT = 'DMSans-Regular';
 
+// font-size
+
+
+// function
 export const showSomePasswordComponents = (password) => {
     somePwdComp = '';
 

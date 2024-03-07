@@ -1,11 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, ScrollView } from 'react-native'
 import React from 'react'
 
-const Settings = ({navigation}) => {
+const Settings = ({ navigation }) => {
   return (
-    <View>
-      <Text>Settings</Text>
-    </View>
+    <ScrollView contentContainerStyle={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <View>
+        <Text>Settings</Text>
+      </View>
+    </ScrollView>
   )
 }
 
