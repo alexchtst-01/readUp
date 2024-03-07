@@ -6,7 +6,7 @@ import { DrawerItemList, createDrawerNavigator } from "@react-navigation/drawer"
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { Splash, Login, Signup, Home, Bookmark, Settings, Test } from "../screen"
-import { HomeIcons, BookmarksIcons, SettingsIcons, SearchIcons } from '../assets';
+import { HomeIcons, BookmarksIcons, SettingsIcons, AccountIcons } from '../assets';
 import { BLACK } from "../utils";
 
 const Stack = createNativeStackNavigator();
@@ -41,7 +41,7 @@ const MainApp = () => {
           drawerIcon: () => (<HomeIcons width="24px" height="24px" />),
           headerRight: () => (
             <TouchableOpacity style={{paddingRight: 10}}> 
-              <SearchIcons width="24px" height="24px" />
+              <AccountIcons width="25px" height="25px" />
             </TouchableOpacity>
           )
         }}
@@ -56,7 +56,7 @@ const MainApp = () => {
           drawerIcon: () => (<BookmarksIcons width="24px" height="24px" />),
           headerRight: () => (
             <TouchableOpacity style={{paddingRight: 10}}>
-              <SearchIcons width="24px" height="24px" />
+              <AccountIcons width="25px" height="25px" />
             </TouchableOpacity>
           )
 
@@ -72,7 +72,7 @@ const MainApp = () => {
           drawerIcon: () => (<SettingsIcons width="24px" height="24px" />),
           headerRight: () => (
             <TouchableOpacity style={{paddingRight: 10}}>
-              <SearchIcons width="24px" height="24px" />
+              <AccountIcons width="25px" height="25px" />
             </TouchableOpacity>
           )
         }}
