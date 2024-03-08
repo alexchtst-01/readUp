@@ -39,7 +39,7 @@ const GateWayApp = () => {
 const MainApp = () => {
   return (
     <Drawer.Navigator
-    initialRouteName='Bookmark'
+    initialRouteName='Home'
       drawerContent={props => {
         return (
           <SafeAreaView>
