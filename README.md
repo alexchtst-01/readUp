@@ -1,4 +1,4 @@
 # contribute by Alex Cinatra and Ariq Fadhila
 
-## install the dependencies
+## inpo
 sabar belom selesai
