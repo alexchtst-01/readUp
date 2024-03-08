@@ -2,7 +2,7 @@ import {Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 
 import ResultsItems from '../ResultsItems';
-import {BLACK, TEXT_FONT, showSomeNameOnly} from '../../utils';
+import {BLACK, TEXT_FONT} from '../../utils';
 
 const Results = ({dataToShow, name}) => {
   return (

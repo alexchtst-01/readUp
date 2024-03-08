@@ -1,112 +1,140 @@
-import React from 'react'
-import { Text, TouchableOpacity } from "react-native"
+import React from 'react';
+import {Text, TouchableOpacity} from 'react-native';
 
-import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import { DrawerItemList, createDrawerNavigator } from "@react-navigation/drawer";
-import { SafeAreaView } from "react-native-safe-area-context";
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {DrawerItemList, createDrawerNavigator} from '@react-navigation/drawer';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
-import { Splash, Login, Signup, Home, Bookmark, Settings, Test, Searchs } from "../screen"
-import { HomeIcons, BookmarksIcons, SettingsIcons, AccountIcons, SearchIcons } from '../assets';
-import { BLACK } from "../utils";
+import {
+  Splash,
+  Login,
+  Signup,
+  Home,
+  Bookmark,
+  Settings,
+  Test,
+  Searchs,
+} from '../screen';
+import {
+  HomeIcons,
+  BookmarksIcons,
+  SettingsIcons,
+  AccountIcons,
+  SearchIcons,
+} from '../assets';
+import {BLACK} from '../utils';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
 
 const GateWayApp = () => {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
+    <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="SignUp" component={Signup} />
     </Stack.Navigator>
-  )
-}
+  );
+};
 
 const MainApp = () => {
   return (
-    <Drawer.Navigator drawerContent={(props) => {
-      return (
-        <SafeAreaView>
-          <Text style={{ fontWeight: 'bold', color: BLACK, paddingLeft: 10, paddingVertical: 20, fontSize: 20 }}>ReadUp</Text>
-          <DrawerItemList {...props} />
-        </SafeAreaView>
-      )
-    }}>
+    <Drawer.Navigator
+    initialRouteName='Bookmark'
+      drawerContent={props => {
+        return (
+          <SafeAreaView>
+            <Text
+              style={{
+                fontWeight: 'bold',
+                color: BLACK,
+                paddingLeft: 10,
+                paddingVertical: 20,
+                fontSize: 20,
+              }}>
+              ReadUp
+            </Text>
+            <DrawerItemList {...props} />
+          </SafeAreaView>
+        );
+      }}>
       <Drawer.Screen
-        name='Home'
+        name="Home"
         component={Home}
         options={{
-          drawerLabel: "Home",
+          drawerLabel: 'Home',
           title: 'ReadUp',
           headerTitleAlign: 'center',
-          drawerIcon: () => (<HomeIcons width="24px" height="24px" />),
+          drawerIcon: () => <HomeIcons width="24px" height="24px" />,
           headerRight: () => (
-            <TouchableOpacity style={{paddingRight: 10}}> 
+            <TouchableOpacity style={{paddingRight: 10}}>
               <AccountIcons width="25px" height="25px" />
             </TouchableOpacity>
-          )
+          ),
         }}
       />
       <Drawer.Screen
-        name='Bookmark'
+        name="Bookmark"
         component={Bookmark}
         options={{
           drawerLabel: "Bookmarks",
           title: 'ReadUp',
           headerTitleAlign: 'center',
-          drawerIcon: () => (<BookmarksIcons width="24px" height="24px" />),
+          drawerIcon: () => <BookmarksIcons width="24px" height="24px" />,
           headerRight: () => (
             <TouchableOpacity style={{paddingRight: 10}}>
               <AccountIcons width="25px" height="25px" />
             </TouchableOpacity>
-          )
-
+          ),
+          headerShown: false
         }}
       />
       <Drawer.Screen
-        name='Search'
+        name="Search"
         component={Searchs}
         options={{
-          drawerLabel: "Search",
+          drawerLabel: 'Search',
           title: 'ReadUp',
           headerTitleAlign: 'center',
-          drawerIcon: () => (<SearchIcons width="24px" height="24px" />),
+          drawerIcon: () => <SearchIcons width="24px" height="24px" />,
           headerRight: () => (
             <TouchableOpacity style={{paddingRight: 10}}>
               <AccountIcons width="25px" height="25px" />
             </TouchableOpacity>
-          )
-
+          ),
+          headerShown: false
         }}
       />
       <Drawer.Screen
-        name='Settings'
+        name="Settings"
         component={Settings}
         options={{
-          drawerLabel: "Settings",
+          drawerLabel: 'Settings',
           title: 'ReadUp',
           headerTitleAlign: 'center',
-          drawerIcon: () => (<SettingsIcons width="24px" height="24px" />),
+          drawerIcon: () => <SettingsIcons width="24px" height="24px" />,
           headerRight: () => (
             <TouchableOpacity style={{paddingRight: 10}}>
               <AccountIcons width="25px" height="25px" />
             </TouchableOpacity>
-          )
+          ),
+          headerShown: false
         }}
       />
     </Drawer.Navigator>
-  )
-}
-
+  );
+};
 
 const Router = () => {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='MainApp'>
-      <Stack.Screen name='Splash' component={Splash} />
+    <Stack.Navigator
+      screenOptions={{headerShown: false}}
+      initialRouteName="MainApp">
+      <Stack.Screen name="Splash" component={Splash} />
       <Stack.Screen name="GateWay" component={GateWayApp} />
       <Stack.Screen name="MainApp" component={MainApp} />
       <Stack.Screen name="Test" component={Test} />
     </Stack.Navigator>
-  )
-}
+  );
+};
 
-export default Router
+export default Router;
