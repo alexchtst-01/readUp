@@ -16,7 +16,8 @@ const Home = ({navigation}) => {
   const [filteredData, setFilteredData] = useState([]);
   // sementara kasih flex: 1 biar full aja ke screennya
   return (
-    <ScrollView showsVerticalScrollIndicator={false}
+    <ScrollView
+      showsVerticalScrollIndicator={false}
       contentContainerStyle={{backgroundColor: WHITE, paddingVertical: 10}}>
       <View>
         <Search
@@ -64,10 +65,10 @@ const Home = ({navigation}) => {
             flexDirection: 'row',
             justifyContent: 'space-between',
             alignItems: 'center',
-            marginBottom: 3,
+            marginBottom: 5,
           }}>
           <Text style={{color: BLACK, fontFamily: TEXT_FONT, fontSize: 25}}>
-            Recommended
+            Recommended for you
           </Text>
           <TouchableOpacity>
             <Text style={{color: BLACK, fontFamily: TEXT_FONT}}>See All</Text>

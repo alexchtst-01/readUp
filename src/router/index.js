@@ -5,10 +5,9 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { DrawerItemList, createDrawerNavigator } from "@react-navigation/drawer";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import { Splash, Login, Signup, Home, Bookmark, Settings, Test } from "../screen"
+import { Splash, Login, Signup, Home, Bookmark, Settings, Test, Searchs } from "../screen"
 import { HomeIcons, BookmarksIcons, SettingsIcons, AccountIcons, SearchIcons } from '../assets';
 import { BLACK } from "../utils";
-import { Search } from '../components';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -65,7 +64,7 @@ const MainApp = () => {
       />
       <Drawer.Screen
         name='Search'
-        component={Search}
+        component={Searchs}
         options={{
           drawerLabel: "Search",
           title: 'ReadUp',
