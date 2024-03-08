@@ -6,8 +6,9 @@ import { DrawerItemList, createDrawerNavigator } from "@react-navigation/drawer"
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { Splash, Login, Signup, Home, Bookmark, Settings, Test } from "../screen"
-import { HomeIcons, BookmarksIcons, SettingsIcons, AccountIcons } from '../assets';
+import { HomeIcons, BookmarksIcons, SettingsIcons, AccountIcons, SearchIcons } from '../assets';
 import { BLACK } from "../utils";
+import { Search } from '../components';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -50,10 +51,26 @@ const MainApp = () => {
         name='Bookmark'
         component={Bookmark}
         options={{
-          drawerLabel: "BookMarks",
+          drawerLabel: "Bookmarks",
           title: 'ReadUp',
           headerTitleAlign: 'center',
           drawerIcon: () => (<BookmarksIcons width="24px" height="24px" />),
+          headerRight: () => (
+            <TouchableOpacity style={{paddingRight: 10}}>
+              <AccountIcons width="25px" height="25px" />
+            </TouchableOpacity>
+          )
+
+        }}
+      />
+      <Drawer.Screen
+        name='Search'
+        component={Search}
+        options={{
+          drawerLabel: "Search",
+          title: 'ReadUp',
+          headerTitleAlign: 'center',
+          drawerIcon: () => (<SearchIcons width="24px" height="24px" />),
           headerRight: () => (
             <TouchableOpacity style={{paddingRight: 10}}>
               <AccountIcons width="25px" height="25px" />
