@@ -7,6 +7,7 @@ import {
   Dimensions,
 } from 'react-native';
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 
 import {BookMarkItem} from '../../components';
 import {AddIcons, LeftArrowIcons} from '../../assets';
@@ -14,6 +15,7 @@ import {WHITE, BLACK, TEXT_FONT} from '../../utils';
 
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
+const navigateTo = useNavigation();
 
 const Bookmark = ({navigation}) => {
   const backToHome = () => {
@@ -57,6 +59,7 @@ const Bookmark = ({navigation}) => {
       {/* bookmarks items */}
       <View style={{marginVertical: 20}}>
         <BookMarkItem
+          toBook={() => navigateTo.navigate('Book')}
           title={'Book Title'}
           author={'Alex Cinatra'}
           desc={
@@ -64,6 +67,7 @@ const Bookmark = ({navigation}) => {
           }
         />
         <BookMarkItem
+          toBook={() => navigateTo.navigate('Book')}
           title={'Book Title'}
           author={'Alex Cinatra'}
           desc={
@@ -71,6 +75,7 @@ const Bookmark = ({navigation}) => {
           }
         />
         <BookMarkItem
+          toBook={() => navigateTo.navigate('Book')}
           title={'Book Title'}
           author={'Alex Cinatra'}
           desc={
@@ -78,6 +83,7 @@ const Bookmark = ({navigation}) => {
           }
         />
         <BookMarkItem
+          toBook={() => navigateTo.navigate('Book')}
           title={'Book Title'}
           author={'Alex Cinatra'}
           desc={
@@ -85,6 +91,7 @@ const Bookmark = ({navigation}) => {
           }
         />
         <BookMarkItem
+          toBook={() => navigateTo.navigate('Book')}
           title={'Book Title'}
           author={'Alex Cinatra'}
           desc={
@@ -92,6 +99,7 @@ const Bookmark = ({navigation}) => {
           }
         />
         <BookMarkItem
+          toBook={() => navigateTo.navigate('Book')}
           title={'Book Title'}
           author={'Alex Cinatra'}
           desc={

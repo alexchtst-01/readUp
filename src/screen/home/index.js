@@ -5,12 +5,15 @@ import {
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import React, {useState} from 'react';
 
 import {Search, Results, Category, BookCard} from '../../components';
 import {TEXT_FONT, WHITE, BLACK, TEXT_TITLE} from '../../utils';
 
 import {genreData, searchData} from '../../dataDummy';
+
+const navigateTo = useNavigation();
 
 const Home = ({navigation}) => {
   const [filteredData, setFilteredData] = useState([]);

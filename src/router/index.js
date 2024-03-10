@@ -12,8 +12,8 @@ import {
   Home,
   Bookmark,
   Settings,
-  Test,
   Searchs,
+  Book
 } from '../screen';
 import {
   HomeIcons,
@@ -23,7 +23,6 @@ import {
   SearchIcons,
 } from '../assets';
 import {BLACK} from '../utils';
-import Book from '../screen/Book';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -40,7 +39,7 @@ const GateWayApp = () => {
 const MainApp = () => {
   return (
     <Drawer.Navigator
-    initialRouteName='Book'
+      initialRouteName="Home"
       drawerContent={props => {
         return (
           <SafeAreaView>
@@ -77,7 +76,7 @@ const MainApp = () => {
         name="Bookmark"
         component={Bookmark}
         options={{
-          drawerLabel: "Bookmarks",
+          drawerLabel: 'Bookmarks',
           title: 'ReadUp',
           headerTitleAlign: 'center',
           drawerIcon: () => <BookmarksIcons width="24px" height="24px" />,
@@ -86,7 +85,7 @@ const MainApp = () => {
               <AccountIcons width="25px" height="25px" />
             </TouchableOpacity>
           ),
-          headerShown: false
+          headerShown: false,
         }}
       />
       <Drawer.Screen
@@ -102,7 +101,7 @@ const MainApp = () => {
               <AccountIcons width="25px" height="25px" />
             </TouchableOpacity>
           ),
-          headerShown: false
+          headerShown: false,
         }}
       />
       <Drawer.Screen
@@ -118,25 +117,19 @@ const MainApp = () => {
               <AccountIcons width="25px" height="25px" />
             </TouchableOpacity>
           ),
-          headerShown: false
+          headerShown: false,
         }}
       />
-      <Drawer.Screen
+      {/* <Drawer.Screen
         name="Book"
         component={Book}
         options={{
-          drawerLabel: 'Book',
-          title: 'ReadUp',
-          headerTitleAlign: 'center',
-          drawerIcon: () => <SearchIcons width="24px" height="24px" />,
-          headerRight: () => (
-            <TouchableOpacity style={{paddingRight: 10}}>
-              <AccountIcons width="25px" height="25px" />
-            </TouchableOpacity>
-          ),
+          drawerLabel: '',
+          unmountOnBlur: true,
+          drawerIcon: null,
           headerShown: false
         }}
-      />
+      /> */}
     </Drawer.Navigator>
   );
 };
@@ -149,7 +142,7 @@ const Router = () => {
       <Stack.Screen name="Splash" component={Splash} />
       <Stack.Screen name="GateWay" component={GateWayApp} />
       <Stack.Screen name="MainApp" component={MainApp} />
-      <Stack.Screen name="Test" component={Test} />
+      <Stack.Screen name='Book' component={Book} />
     </Stack.Navigator>
   );
 };
