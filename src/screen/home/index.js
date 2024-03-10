@@ -51,11 +51,11 @@ const Home = ({navigation}) => {
           </TouchableOpacity>
         </View>
         <ScrollView horizontal>
-          <BookCard name={'Title here'} />
-          <BookCard name={'Title here'} />
-          <BookCard name={'Title here'} />
-          <BookCard name={'Title here'} />
-          <BookCard name={'Title here'} />
+          <BookCard name={'Title here'} toBook={() => { navigation.navigate('Book') }} />
+          <BookCard name={'Title here'} toBook={() => { navigation.navigate('Book') }} />
+          <BookCard name={'Title here'} toBook={() => { navigation.navigate('Book') }} />
+          <BookCard name={'Title here'} toBook={() => { navigation.navigate('Book') }} />
+          <BookCard name={'Title here'} toBook={() => { navigation.navigate('Book') }} />
         </ScrollView>
       </View>
 
@@ -75,11 +75,11 @@ const Home = ({navigation}) => {
           </TouchableOpacity>
         </View>
         <ScrollView horizontal>
-          <BookCard name={'Title here'} />
-          <BookCard name={'Title here'} />
-          <BookCard name={'Title here'} />
-          <BookCard name={'Title here'} />
-          <BookCard name={'Title here'} />
+          <BookCard name={'Title here'} toBook={() => { navigation.navigate('Book') }} />
+          <BookCard name={'Title here'} toBook={() => { navigation.navigate('Book') }} />
+          <BookCard name={'Title here'} toBook={() => { navigation.navigate('Book') }} />
+          <BookCard name={'Title here'} toBook={() => { navigation.navigate('Book') }} />
+          <BookCard name={'Title here'} toBook={() => { navigation.navigate('Book') }} />
         </ScrollView>
       </View>
     </ScrollView>

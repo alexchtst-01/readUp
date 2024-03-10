@@ -7,6 +7,8 @@ import BookCard from './BookCard';
 import BookMarkItem from './BookmarkItem';
 import HistoryItem from './HistoryItem';
 import BookSearchingItem from './BookSearchingItem';
+import BookHeader from './BookHeader';
+import BookDetails from './BookDetail';
 
 export {
   Password,
@@ -18,4 +20,6 @@ export {
   BookMarkItem,
   HistoryItem,
   BookSearchingItem,
+  BookHeader,
+  BookDetails,
 };

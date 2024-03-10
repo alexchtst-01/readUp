@@ -8,6 +8,8 @@ import MicroPhoneIcons from './icons/microphone.svg';
 import LeftArrowIcons from './icons/leftArrow.svg';
 import AddIcons from './icons/add.svg';
 import CloseIcons from "./icons/close.svg"
+import WhiteLeftArrowIcons from "./icons/whiteLeftArrow.svg"
+import WhiteBookmarkIcons from "./icons/whiteBookmark.svg"
 
 // for background is here
 
@@ -21,5 +23,7 @@ export {
   MicroPhoneIcons,
   LeftArrowIcons,
   AddIcons,
-  CloseIcons
+  CloseIcons,
+  WhiteLeftArrowIcons,
+  WhiteBookmarkIcons
 };

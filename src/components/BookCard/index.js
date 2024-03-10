@@ -2,9 +2,9 @@ import { StyleSheet, Text, View, Dimensions } from 'react-native'
 import React from 'react'
 import { BLACK, PRIMARY_GREEN, TEXT_FONT } from '../../utils'
 
-const BookCard = ({name}) => {
+const BookCard = ({name, toBook}) => {
   return (
-    <View style={styles.container}>
+    <View style={styles.container} onPress={toBook}>
       <View style={styles.image}></View>
       <Text style={styles.text}>{name}</Text>
     </View>
