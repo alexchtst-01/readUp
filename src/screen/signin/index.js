@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Dimensions, TextInput, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, Dimensions, TextInput, ScrollView, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -25,9 +25,9 @@ const FormSection = ({navigation}) => {
 
       <View>
         <TextInput style={styles.code} placeholder='CODE' keyboardType='numeric' value={code} onChange={onChangeCode} />
-        <View style={styles.buttonLogin}>
-          <Text style={{ color: LIGHT, fontFamily: PRIMARY_FONT, fontSize: 18, }} onPress={() => {navigation.replace('PasswordSection')}}>Verivikasi</Text>
-        </View>
+        <TouchableOpacity style={styles.buttonLogin} onPress={() => {navigation.replace('PasswordSection')}}>
+          <Text style={{ color: LIGHT, fontFamily: PRIMARY_FONT, fontSize: 18, }}>Verivikasi</Text>
+        </TouchableOpacity>
       </View>
 
       <View style={{ flexDirection: 'row', marginVertical: 10 }}>
@@ -60,9 +60,9 @@ const PasswordSection = ({navigation}) => {
           <Text style={{ fontFamily: PRIMARY_FONT, fontSize: 15, color: BLACK, fontWeight: 'bold' }}>{showSomePasswordComponents(password)}</Text>
         </View>
       </View>
-      <View style={styles.buttonLogin}>
-        <Text style={{ color: LIGHT, fontFamily: PRIMARY_FONT, fontSize: 18, }} onPress={() => {navigation.replace('MainApp')}}>Create An Acount</Text>
-      </View>
+      <TouchableOpacity style={styles.buttonLogin} onPress={() => {navigation.replace('Login')}}>
+        <Text style={{ color: LIGHT, fontFamily: PRIMARY_FONT, fontSize: 18, }}>Create An Acount</Text>
+      </TouchableOpacity>
     </View>
   )
 }

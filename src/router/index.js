@@ -128,7 +128,7 @@ const Router = () => {
   return (
     <Stack.Navigator
       screenOptions={{headerShown: false}}
-      initialRouteName="MainApp">
+      initialRouteName="GateWay">
       <Stack.Screen name="Splash" component={Splash} />
       <Stack.Screen name="GateWay" component={GateWayApp} />
       <Stack.Screen name="MainApp" component={MainApp} />
