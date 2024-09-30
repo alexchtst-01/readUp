@@ -2,16 +2,16 @@
 
 ## Result
 - search
-![Alt text](imageResult/result1.jpg)
+<img src="imageResult/result1.jpg" alt="Alt text" width="300"/>
 
 - dashbard
-![Alt text](imageResult/result2.jpg)
+<img src="imageResult/result2.jpg" alt="Alt text" width="300"/>
 
 - side navigation
-![Alt text](imageResult/result4.jpg)
+<img src="imageResult/result4.jpg" alt="Alt text" width="300"/>
 
 - my bookmark
-![Alt text](imageResult/result5.jpg)
+<img src="imageResult/result5.jpg" alt="Alt text" width="300"/>
 
 - search title book
-![Alt text](imageResult/result6.jpg)
+<img src="imageResult/result6.jpg" alt="Alt text" width="300"/>
